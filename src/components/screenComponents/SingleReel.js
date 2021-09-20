@@ -71,7 +71,7 @@ const SingleReel = ({item, index, currentIndex}) => {
           position: 'absolute',
           width: windowWidth,
           zIndex: 1,
-          bottom: 80,
+          bottom: 0, //edited
           padding: 10,
         }}>
         <View style={{}}>
@@ -114,7 +114,7 @@ const SingleReel = ({item, index, currentIndex}) => {
       <View
         style={{
           position: 'absolute',
-          bottom: 100,
+          bottom: 10, //edited
           right: 0,
         }}>
         <TouchableOpacity onPress={() => setLike(!like)} style={{padding: 10}}>
