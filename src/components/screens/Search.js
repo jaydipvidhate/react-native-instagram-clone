@@ -60,7 +60,7 @@ const Search = () => {
               top: windoeHeight / 6,
               left: windowWidth / 18,
               backgroundColor: 'white',
-              width: 350,
+              width: '90%',
               height: 465,
               borderRadius: 15,
               zIndex: 1,

@@ -46,6 +46,7 @@ const SearchContent = props => {
                   flexDirection: 'row',
                   flexWrap: 'wrap',
                   justifyContent: 'space-between',
+                  width:'100%'
                 }}>
                 {data.images.map((imageData, imgIndex) => {
                   return (
@@ -53,10 +54,10 @@ const SearchContent = props => {
                       key={imgIndex}
                       onPressIn={() => props.data(imageData)}
                       onPressOut={() => props.data(null)}
-                      style={{paddingBottom: 2}}>
+                      style={{paddingBottom: 2,width:'33%'}}>
                       <Image
                         source={imageData}
-                        style={{width: 129, height: 150}}
+                        style={{width: '100%', height: 150}}
                       />
                     </TouchableOpacity>
                   );
@@ -73,7 +74,7 @@ const SearchContent = props => {
                   style={{
                     flexDirection: 'row',
                     flexWrap: 'wrap',
-                    width: 261,
+                    width:'66.5%',
                     justifyContent: 'space-between',
                   }}>
                   {data.images.slice(0, 4).map((imageData, imgIndex) => {
@@ -82,10 +83,10 @@ const SearchContent = props => {
                         key={imgIndex}
                         onPressIn={() => props.data(imageData)}
                         onPressOut={() => props.data(null)}
-                        style={{paddingBottom: 2}}>
+                        style={{paddingBottom: 2,width:'49.5%'}}>
                         <Image
                           source={imageData}
-                          style={{width: 129, height: 150}}
+                          style={{width: '100%', height: 150}}
                         />
                       </TouchableOpacity>
                     );
@@ -94,10 +95,10 @@ const SearchContent = props => {
                 <TouchableOpacity
                   onPressIn={() => props.data(data.images[5])}
                   onPressOut={() => props.data(null)}
-                  style={{marginLeft: 2}}>
+                  style={{marginLeft: 2,width:'33%'}}>
                   <Image
                     source={data.images[5]}
-                    style={{width: 129, height: 300}}
+                    style={{width: '100%', height: 300}}
                   />
                 </TouchableOpacity>
               </View>
@@ -111,17 +112,17 @@ const SearchContent = props => {
                 <TouchableOpacity
                   onPressIn={() => props.data(data.images[2])}
                   onPressOut={() => props.data(null)}
-                  style={{paddingRight: 2}}>
+                  style={{paddingRight: 2,width:'66.5%'}}>
                   <Image
                     source={data.images[2]}
-                    style={{width: 260, height: 300}}
+                    style={{width: '100%', height: 300}}
                   />
                 </TouchableOpacity>
                 <View
                   style={{
                     flexDirection: 'row',
                     flexWrap: 'wrap',
-                    width: 130,
+                    width: '33%',
                     justifyContent: 'space-between',
                   }}>
                   {data.images.slice(0, 2).map((imageData, imgIndex) => {
@@ -130,10 +131,10 @@ const SearchContent = props => {
                         key={imgIndex}
                         onPressIn={() => props.data(imageData)}
                         onPressOut={() => props.data(null)}
-                        style={{paddingBottom: 2}}>
+                        style={{paddingBottom: 2,width:'100%'}}>
                         <Image
                           source={imageData}
-                          style={{width: 129, height: 150}}
+                          style={{width: '100%', height: 150}}
                         />
                       </TouchableOpacity>
                     );
