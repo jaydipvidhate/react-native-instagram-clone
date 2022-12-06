@@ -89,7 +89,7 @@ const FriendProfile = ({route, navigation}) => {
                           name="close"
                           style={{
                             fontSize: 20,
-                            color: 'black',
+                            color: 'red',
                             opacity: 0.5,
                           }}
                         />
